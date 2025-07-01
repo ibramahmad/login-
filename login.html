@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-container">
+    <div class="container">
+        <h1>Login System</h1>
+        <p class="subtitle">Enter your name to login or logout</p>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <button type="submit" class="btn" id="submitBtn">Login / Logout</button>
+        </form>
+
+        <div id="message" class="message"></div>
+
+        <div class="status">
+            <h3>Current Session</h3>
+            <div class="status-item">
+                <span class="status-label">Status:</span>
+                <span class="status-value" id="userStatus">
+                    <span class="offline-indicator"></span>Ready
+                </span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Last Action:</span>
+                <span class="status-value" id="lastAction">No recent activity</span>
+            </div>
+        </div>
+
+        <div class="nav-link">
+            <a href="dashboard.html">View Dashboard →</a>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
